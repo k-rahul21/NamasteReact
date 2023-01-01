@@ -1,0 +1,12 @@
+Ques1: What is Emmet?
+Answer: Emmet is a plugin for many popular text-editors which greatly improves HTML & CSS workflow.
+        Emmet is a bunch of different shortcuts and snippets where we type a small amout of code & it'll generate a bunch of code for us by just typing a small amount of information.
+
+        Syntax:
+        The general way to write Emmet Abbreviations is:
+        tagName[series of expressions]
+        => where tagName: is the Html tag you want to generate.
+        => Series of expressions will goverb the markup that will be generated.
+
+        Tip*:
+        While typing the Emmet Abbreviations, you can press ctrl + space see what'll be generated(inside a pop up).
