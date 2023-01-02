@@ -1,4 +1,4 @@
-Ques1: What is Emmet?
+Ques1:  What is Emmet?
 Answer: Emmet is a plugin for many popular text-editors which greatly improves HTML & CSS workflow.
         Emmet is a bunch of different shortcuts and snippets where we type a small amout of code & it'll generate a bunch of code for us by just typing a small amount of information.
 
@@ -10,3 +10,24 @@ Answer: Emmet is a plugin for many popular text-editors which greatly improves H
 
         Tip*:
         While typing the Emmet Abbreviations, you can press ctrl + space see what'll be generated(inside a pop up).
+
+        Link: 
+        https://medium.com/@kartik2406/web-development-with-vs-code-part-1-emmet-6af80f0f630c
+
+Ques2:  Difference between a framework and a library?
+Answer: First of all, Both framework and libraries are code written by someone else that's used to help solve common problems.
+
+        Framework: When we use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
+        Library: When you use a library, you're in charge of the flow of the application. You are choosing when and where to call the library. 
+
+        Key Differences: 
+        Put simply, the inversion of control (Ioc) describes the difference between a library and a framework. 
+        By using a library, you control the flow of the program. The library can be invoked whenever and wherever you like. Contrary to this, when you use a framework, the flow is controlled by the framework.
+        The framework instructs you where to put your code, but it'll call your code as required.
+        Simply put, our code calls the library's code, but in a framework, it's the framework'code that calls our code.
+
+
+Ques3:  What is CDN? Why do we use it?
+Answer: A content delivery network (CDN) is a group of geographically distributed servers that speed up the delivery of web content by bringing it closer to where users are.
+
+
