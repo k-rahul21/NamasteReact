@@ -7,6 +7,14 @@
   <title>Inception</title>
 </head>
 <body>
-  <h1>Hello world</h1>
+  <div id="root"></div>
 </body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+  const heading = React.createElement("h1", {className: 'heading'}, "Namaste Everyone");
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(heading);
+</script>
+
 </html>
