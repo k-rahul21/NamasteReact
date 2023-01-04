@@ -1,6 +1,7 @@
 Ques1:  What is Emmet?
 Answer: Emmet is a plugin for many popular text-editors which greatly improves HTML & CSS workflow.
-        Emmet is a bunch of different shortcuts and snippets where we type a small amout of code & it'll generate a bunch of code for us by just typing a small amount of information.
+        Emmet is a bunch of different shortcuts and snippets where we type a small amout of code & it'll generate a bunch of code for us by just typing a small amount of 
+        information.
 
         Syntax:
         The general way to write Emmet Abbreviations is:
@@ -64,4 +65,20 @@ Answer: In order to work with React in the browsers, we need to include 2 librar
 Ques6:  Why is React known as React?
 Answer: React renders everything that is changing in the webpages constantly. The change being made depends upon the changes in the state of the application.
         so, reacting to every change in the state got React to be called React.
+
+
+Ques7:  What is difference between react.development.js and react.production.js files via CDN?
+Answer: The development build is used (react.development.js) - as the name suggests - for developing reasons. You have source maps, debugging and often times hot module reloading(hmr) ability in those builds.
+        The production build is used (react.production.js) - on the other hand, runs in production mode which means this is the code running on your client' machine. The production build runs uglify and build 
+        your source files into one or multiple minimized files. It also extracts CSS and images and of course any other sources you're loading with Webpack. There's also no hot reloading included. 
+        Source Maps might be included as separate files depending on your webpack
+
+        In other words:
+        react.development.js provides us extra features like debugging, hmr(Hot module reloading) and lots of other stuffs that you might use while developing app with the help of bundlers like webpack, parcel, vite. 
+        This bundler bundles and minifies our code to be deployed on production.
+        These minified files will be deployed on production which removes lots of unnecessary files which will not be used by our app for this we have react.production.js to make our much faster(as bundlers and lots 
+        of other files have done there work and are not required now).
+
+        Link:
+        https://stackoverflow.com/questions/48151128/difference-between-production-and-development-build-in-reactjs#:~:text=The%20development%20build%20is%20used,running%20on%20your%20client%27s%20machine.
 
