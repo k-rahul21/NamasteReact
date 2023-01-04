@@ -34,7 +34,7 @@ Ques3:  What is CDN? Why do we use it?
 Answer: A content delivery network (CDN) is a group of geographically distributed servers that speed up the delivery of web content by bringing 
         it closer to where users are.
         A CDN allows for the quick transfer of assets needed for loading internet content including HTML pages, javascript files, stylesheets, images and videos. 
-        The popularity of CDN services continues to grow, and today the majority of web traffic is served through CDNs, including traffic from major sites Fb, Netflix & Amazon.
+        The popularity of CDN services continues to grow, and today the majority of web traffic is served through CDNs, including traffic from major sites Fb, Netflix.
 
         Link:
         https://www.cloudflare.com/learning/cdn/what-is-a-cdn/
@@ -86,6 +86,5 @@ Answer: The development build is used (react.development.js) - as the name sugge
         These minified files will be deployed on production which removes lots of unnecessary files which will not be used by our app for this we have react.production.js 
         to make our much faster(as bundlers and lots of other files have done there work and are not required now).
 
-        Link:
-        https://stackoverflow.com/questions/48151128/difference-between-production-and-development-build-in-reactjs#:~:text=The%20development%20build%20is%20used,running%20on%20your%20client%27s%20machine.
+        
 
