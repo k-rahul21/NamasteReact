@@ -1,2 +1,8 @@
 What is Bundlers?
 <--- BUNDLERS: vite, parcel, webpack --->
+
+Why do we need use npm?
+because we want a lot of packages in our project bcz our react app cannot be build by just inject react library into our code.
+we want to manage a lot of packages our react app is a huge app which does not run on react there're lots of superpowers which we need. those superpowers comes from different packages which packages are present by using npm. 
+
+-D means dev dependcy
