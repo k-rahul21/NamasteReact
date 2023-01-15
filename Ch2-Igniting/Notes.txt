@@ -20,3 +20,13 @@ Ans: we never have to add node_modules to our gitignore. bcz our package-lock.js
 if we have package-lock.json then we can regenerate the node_modules exactly the same how much heavy it could be.
 
 npx means execute it with npm.
+
+/* 
+- HMR - Hot Module Replacement
+- File Watcher Algorithm - c++
+- Bundling
+- Minify
+- Cleaning our code
+- Dev and Production build
+- Super Fast build Algorithm
+*/

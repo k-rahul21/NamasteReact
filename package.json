@@ -2,7 +2,7 @@
   "name": "namastereact",
   "version": "1.0.0",
   "description": "This is namaste react learning course",
-  "main": "index.html",
+  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/k-rahul21/NamasteReact#readme",
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
