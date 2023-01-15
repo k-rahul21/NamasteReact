@@ -5,4 +5,16 @@ Why do we need use npm?
 because we want a lot of packages in our project bcz our react app cannot be build by just inject react library into our code.
 we want to manage a lot of packages our react app is a huge app which does not run on react there're lots of superpowers which we need. those superpowers comes from different packages which packages are present by using npm. 
 
--D means dev dependcy
+-D means dev dependency.
+dev dependencies means we want some packages into our development environment.
+
+import things about package-lock.json
+- package-lock.json is very important file.
+- it locks the version.
+- you never have to keep it in gitignore.
+
+node_modules is like a database for our npm. from here those superpowers are coming.
+
+Ques: should we add node_modules to our gitignore?
+Ans: we never have to add node_modules to our gitignore. bcz our package-lock.json have sufficient info to recreate the node_modules.
+if we have package-lock.json then we can regenerate the node_modules exactly the same how much heavy it could be.
