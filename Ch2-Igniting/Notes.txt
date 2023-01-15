@@ -18,3 +18,5 @@ node_modules is like a database for our npm. from here those superpowers are com
 Ques: should we add node_modules to our gitignore?
 Ans: we never have to add node_modules to our gitignore. bcz our package-lock.json have sufficient info to recreate the node_modules.
 if we have package-lock.json then we can regenerate the node_modules exactly the same how much heavy it could be.
+
+npx means execute it with npm.
