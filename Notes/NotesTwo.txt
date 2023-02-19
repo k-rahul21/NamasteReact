@@ -1,0 +1,12 @@
+install npm by hitting cmd npm init or npm init -y to skip all the ques.
+npm is used to manage our packager.
+why we're using npm in our project?
+bcz our react app powered by alot of things lot of packages suppose we have to minify it suppose we have to bundled things suppose we have to remove console.log
+suppose we have to optimize our app so for all these we need alot of helper packages and those helper packages comes inside npm.
+
+// install parcel 2nd step
+cmd npm install -D parcel (read about dev dependency)
+we use -D (hypen d) when we want our package on developer machine not on production.
+
+read about package.json and package-lock.json
+read about caret and tilde in package.json
