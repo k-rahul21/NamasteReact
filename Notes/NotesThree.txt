@@ -1,0 +1,35 @@
+/**
+Header 
+  -logo
+  -Nav items
+  -cart (counter)
+
+Body
+  -Search bar
+  -RestrauntList
+  -RestrauntCard (many cards)
+    -Image
+    -name
+    -rating
+    -etc
+
+Footer
+  -links
+  -copyright
+*/
+
+
+read about :
+join in array in javascript.
+optional chaining.
+read about diff alog.
+read about react fiber. (https://github.com/acdlite/react-fiber-architecture)
+reconiliation in react. (reconsiliation uses a algo which is diff alog which finds out which components needs to be updated or which not.)
+why we use keys in react?
+
+why react is fast?
+react uses somethings knows as virtual dom. virtual dom is the representation of our actual dom and react uses something know as reconilation.
+reconiliation is the process where we have a diff algo which finds out the difference btw trees (one tree over other tree) now we have find out it will re-render only the portion which is required.
+
+why not use index as a key?
+detail info (https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/)

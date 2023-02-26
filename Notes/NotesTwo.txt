@@ -10,3 +10,38 @@ we use -D (hypen d) when we want our package on developer machine not on product
 
 read about package.json and package-lock.json
 read about caret and tilde in package.json
+
+// install react package
+by hitting npm install react (and this is the right way)
+imp* react comes as a package also.
+
+// install react-dom package
+by hitting npm install react-dom
+
+// ignite our app 
+by hitting npx parcel index.html (index.html is the entry point)
+npx means execute using npm
+
+/*
+HMR - (hot module replacement)
+File Watcher Algo - c++
+Bundling
+minify
+Cleaning our code
+Dev and production build
+Super fast build algo
+Image optimization
+Caching while develoment
+Compression
+Compatable with older version of browser
+HTTPS on dev
+port number
+Consistent Hashing Algo
+Zero Configuation
+*/
+
+
+read about:
+Transitive dependencies,
+browserslist. (https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z)
+
