@@ -30,4 +30,24 @@
 - npm install react
 - npm install react-dom
 
-### remove cdn links of react & react-dom from index.html file
+### remove cdn links of react & react-dom from index.html file.
+
+## These are all the things that parcel is doing for us:
+
+- Making Dev Build
+- Local Server
+- HMR (Hot Module Replacement)
+- File Watching Alog (Written in C++)
+- Caching (Faster builds)
+- Image Optimization
+- Minification
+- Bundling
+- Compressing Files (Like removing white spaces etc)
+- Consistent Hashing
+- Code Spliting
+- Differential Bundling (To support multiple types of browsers)
+- Diagnostic
+- Error Handling
+- Tree Shaking (Remove unused code)
+- https
+- Different dev & prod bundles
