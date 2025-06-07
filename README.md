@@ -51,3 +51,24 @@
 - Tree Shaking (Remove unused code)
 - https
 - Different dev & prod bundles
+
+# EP 3
+
+## Read about JSX
+
+## Read about Babel
+
+## React Components
+
+- Class-based components : Old way of writing code, used rarely in the industry
+- Functional components : New way of writing code, most commonly used
+
+## React Functional Components
+
+- It's just a javascript function that returns some JSX or a react element.
+- Always write React Functional Component with Caps letters otherwise you'll be confuse it with normal function.
+
+## What is Component Composition
+
+- A Component inside a component
+- Calling a component inside another component is component composition
