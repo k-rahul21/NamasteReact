@@ -1,22 +1,17 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
+import "./index.css";
+import Header from "./components/Header/Header";
+import Restaurants from "./components/Restaurants/Restaurants";
 
-const Header = () => (
-  <div className="header-section">
-    <div className="logo">Foody Moody</div>
-    <div className="nav-items">
-      <ul>
-        <li>About Us</li>
-        <li>Cart</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-  </div>
-)
 
 const AppLayout = () => {
   return (
-    <Header/>
+    <>
+      <Header/>
+      <Restaurants/>
+    </>
+   
   )
 }
 const rootElement = document.getElementById("root");
