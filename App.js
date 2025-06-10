@@ -1,10 +1,22 @@
 import React from "react";
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
+import "./index.css";
+import Header from "./components/Header/Header";
+import Restaurants from "./components/Restaurants/Restaurants";
 
-const Heading = () => (<h1>Hello From Functional Component</h1>)
+
+const AppLayout = () => {
+  return (
+    <>
+      <Header/>
+      <Restaurants/>
+    </>
+   
+  )
+}
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
 
-root.render(<Heading/>);
+root.render(<AppLayout/>);
 
