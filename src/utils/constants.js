@@ -1,8 +1,6 @@
-import React from "react";
-import RestaurantCard from "../RestaurantCard/RestaurantCard";
+export const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
-const Restaurants = () => {
-  const restaurantsList = [
+export const restaurantsList = [
   {
     "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
     "info": {
@@ -790,11 +788,4 @@ const Restaurants = () => {
     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
   }
 ]
-return (
-  <div className="restaurant-list">{restaurantsList.map((res) => (
-    <RestaurantCard {...res.info}/>
-  ))}</div>
-)
-}
 
-export default Restaurants;
