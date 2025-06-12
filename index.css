@@ -22,14 +22,35 @@
   font-size: 1.3rem;
 }
 
-.nav-items>ul {
+.nav-items > ul,
+.quick-filters-section > ul {
   display: flex;
   list-style-type: none;
   margin: 0;
 }
 
-.nav-items>ul>li {
+.nav-items > ul > li {
   padding: 10px;
+}
+
+.quick-filters-section > ul {
+  padding-left: 0;
+}
+
+.quick-filters-section > ul > li {
+  padding: 10px 10px 10px 0;
+}
+
+.quick-filters-section > ul > li button {
+  padding: 8px 12px;
+  border-radius: 5rem;
+  background-color: #fff;
+  border: 1.5px solid #c9c7c7;
+}
+
+.quick-filters-section > ul >li button:hover {
+  border:  1px solid #333;
+  box-shadow: 1px 1px 5px #333;
 }
 
 .restaurant-list {

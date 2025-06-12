@@ -1,4 +1,12 @@
-const SearchBar = ({searchText, setSearchText}) => {
+import { useState } from "react";
+
+const SearchBar = ({setFilteredRestaurants, restaurantsList}) => {
+  const [searchText, setSearchText] = useState('');
+
+  const searchHandler = (searchText, restaurantsList) => {
+    return restaurantsList?.filter((res) => res.info?.name.toLowerCase().includes(searchText.toLowerCase()))
+  }
+
   return (
      <div className="search-container">
       <input 
@@ -11,7 +19,7 @@ const SearchBar = ({searchText, setSearchText}) => {
         }}
       />
       <button className="search-btn text-14" onClick={() =>  {
-        const data = searchHandler(searchText, restaurants);
+        const data = searchHandler(searchText, restaurantsList);
         setFilteredRestaurants(data);
       }}
       >
