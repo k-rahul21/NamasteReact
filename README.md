@@ -72,3 +72,22 @@
 
 - A Component inside a component
 - Calling a component inside another component is component composition
+
+## Two types of Export/Import
+
+### Default Export
+
+- export default component;
+- import component from path;
+
+### Named Export
+
+- export const component;
+- import {component} from path;
+
+## React Hooks
+
+(Normal JS utility functions)
+
+- useState()
+- useEffect()
