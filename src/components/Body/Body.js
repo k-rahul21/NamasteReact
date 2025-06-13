@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RestaurantCard from "../RestaurantCard/RestaurantCard";
 import { restaurantsList } from "../../utils/constants";
 import SearchBar from "../SearchBar/SearchBar";
@@ -6,6 +6,19 @@ import QuickFilters from "../QuickFilters/QuickFilters";
 
 const Body = () => {
 const [filteredRestaurants, setFilteredRestaurants] = useState(restaurantsList);
+
+useEffect(() => {
+  async function fetchData () {
+    try {
+      const response = await fetch("http://localhost:5000/");
+      const data = await response.text();
+      console.log("Data", data)
+    } catch (error) {
+      console.log("Error")
+    }
+  }
+  fetchData();
+},[])
 
 return restaurantsList.length === 0 ? 
 <div>No Restaurants in this area.</div>
