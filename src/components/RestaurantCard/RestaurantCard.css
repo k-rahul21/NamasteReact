@@ -3,7 +3,7 @@
   
   .restaurant-card {
     width: 200px;
-    /* border: 1px solid #EEEEEE; */
+    border: 1px solid #EEEEEE;
     padding: 10px;
     overflow-wrap: break-word;
     cursor: pointer;
@@ -16,6 +16,7 @@
 
   .restaurant-card .restaurant-card-img {
     width: 100%;
+    height: 25vh;
   }
 
   .product-name {

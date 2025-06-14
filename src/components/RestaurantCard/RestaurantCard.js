@@ -1,7 +1,7 @@
-import { IMG_CDN_URL } from "../../constants";
+import { IMG_CDN_URL } from "../../utils/constants";
 import './RestaurantCard.css'
 
-const RestaurantCard = ({avgRating, aggregatedDiscountInfo,  name, cuisines, costForTwo, deliveryTime, cloudinaryImageId, id}) => {
+const RestaurantCard = ({avgRating, aggregatedDiscountInfo,  name, cuisines, costForTwo, sla, cloudinaryImageId, id}) => {
   return (
     <div className="restaurant-card">
       <img className="restaurant-card-img" src={
@@ -15,7 +15,7 @@ const RestaurantCard = ({avgRating, aggregatedDiscountInfo,  name, cuisines, cos
         {avgRating !== '--' && 
           <div className="product-rating">⭐{avgRating}</div>
         }
-        <div className="product-delivery-time">{deliveryTime} MINS</div>
+        <div className="product-delivery-time">{sla?.deliveryTime} MINS</div>
         <div className="product-cost">Rs.{costForTwo} </div>
       </div>
       {aggregatedDiscountInfo?.descriptionList?.[0].meta && (

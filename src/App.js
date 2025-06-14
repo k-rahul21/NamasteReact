@@ -1,17 +1,16 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
-import "./index.css";
+import "../index.css";
 import Header from "./components/Header/Header";
-import Restaurants from "./components/Restaurants/Restaurants";
+import Body from "./components/Body/Body";
 
 
 const AppLayout = () => {
   return (
     <>
       <Header/>
-      <Restaurants/>
+      <Body/>
     </>
-   
   )
 }
 const rootElement = document.getElementById("root");
