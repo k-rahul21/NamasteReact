@@ -26,16 +26,16 @@ return restaurantsList.length === 0 ?
 <div>No Restaurants in this area.</div>
 : (
   <div className="body-section">
-    <SearchBar 
+    {/* <SearchBar 
       restaurantsList={restaurantsList}
       setFilteredRestaurants={setFilteredRestaurants}
-    />
-    <h2 className="mt-10 text-2xl font-semibold">Restaurants with online food delivery in Delhi</h2>
+    /> */}
+    <h1 className="mt-10 mb-2 text-2xl font-semibold">Restaurants with online food delivery in Delhi</h1>
     <QuickFilters 
       restaurantsList={restaurantsList}
       setFilteredRestaurants={setFilteredRestaurants}
     />
-    <div className="restaurant-list">{filteredRestaurants?.map((res) => (
+    <div className="restaurant-list gap-2">{filteredRestaurants?.map((res) => (
     <RestaurantCard {...res?.info} key={res?.info?.id}/>
   ))}</div>
   </div>

@@ -117,7 +117,8 @@ export const restaurantsList = [
       "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/cf393bdd-34a8-41e3-962d-ba4b1a864a79_739240.JPG",
       "locality": "sector 44",
       "areaName": "Huda City",
-      "costForTwo": "₹200 for two",
+      "costForTwo": 200,
+      "costForTwoString": "₹200 for two",
       "cuisines": [
         "Ice Cream",
         "Desserts"
