@@ -7,18 +7,20 @@ import QuickFilters from "../QuickFilters/QuickFilters";
 const Body = () => {
 const [filteredRestaurants, setFilteredRestaurants] = useState(restaurantsList);
 
-useEffect(() => {
-  async function fetchData () {
-    try {
-      const response = await fetch("http://localhost:5000/");
-      const data = await response.text();
-      console.log("Data", data)
-    } catch (error) {
-      console.log("Error")
-    }
-  }
-  fetchData();
-},[])
+// useEffect(() => {
+//   async function fetchData () {
+//     try {
+//       const response = await fetch("http://localhost:5000/");
+//       const data = await response.text();
+//       console.log("Data", data)
+//     } catch (error) {
+//       console.log("Error")
+//     }
+//   }
+//   fetchData();
+// },[])
+
+console.log("filteredRestaurants", filteredRestaurants);
 
 return restaurantsList.length === 0 ? 
 <div>No Restaurants in this area.</div>
@@ -34,7 +36,7 @@ return restaurantsList.length === 0 ?
       setFilteredRestaurants={setFilteredRestaurants}
     />
     <div className="restaurant-list">{filteredRestaurants?.map((res) => (
-    <RestaurantCard {...res.info} key={res.info.id}/>
+    <RestaurantCard {...res?.info} key={res?.info?.id}/>
   ))}</div>
   </div>
   

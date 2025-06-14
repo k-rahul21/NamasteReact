@@ -15,7 +15,7 @@ const RestaurantCard = ({avgRating, aggregatedDiscountInfo,  name, cuisines, cos
         {avgRating !== '--' && 
           <div className="product-rating">⭐{avgRating}</div>
         }
-        <div className="product-delivery-time">{sla.deliveryTime} MINS</div>
+        <div className="product-delivery-time">{sla?.deliveryTime} MINS</div>
         <div className="product-cost">Rs.{costForTwo} </div>
       </div>
       {aggregatedDiscountInfo?.descriptionList?.[0].meta && (
