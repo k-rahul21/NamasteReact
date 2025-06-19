@@ -3,28 +3,28 @@ import RestaurantCard from "../RestaurantCard/RestaurantCard";
 import { restaurantsList } from "../../utils/constants";
 import SearchBar from "../SearchBar/SearchBar";
 import QuickFilters from "../QuickFilters/QuickFilters";
+import SkeletonListing from "../SkeletonListing/SkeletonListing";
 
 const Body = () => {
-const [filteredRestaurants, setFilteredRestaurants] = useState(restaurantsList);
+const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
-// useEffect(() => {
-//   async function fetchData () {
-//     try {
-//       const response = await fetch("http://localhost:5000/");
-//       const data = await response.text();
-//       console.log("Data", data)
-//     } catch (error) {
-//       console.log("Error")
-//     }
-//   }
-//   fetchData();
-// },[])
+useEffect(() => {
+  async function fetchData () {
+    try {
+      const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.4401115&lng=77.07312739999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+      const data = await response.json();
+      setFilteredRestaurants(data?.data?.cards?.[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    } catch (error) {
+      console.log("Error")
+    }
+  }
+  fetchData();
+},[])
 
 console.log("filteredRestaurants", filteredRestaurants);
 
-return restaurantsList.length === 0 ? 
-<div>No Restaurants in this area.</div>
-: (
+return filteredRestaurants.length === 0 ? 
+<SkeletonListing/> : (
   <div className="body-section">
     {/* <SearchBar 
       restaurantsList={restaurantsList}
