@@ -2,7 +2,8 @@ import React from "react";
 import "./Header.css";
 import Title from "../Title/Title";
 import SearchBar from "../SearchBar/SearchBar";
-import {Link} from "react-router"
+import { Link } from "react-router"
+import { UserRound, ShoppingCart } from "lucide-react"
 
 const Header = () => {
   return (
@@ -14,21 +15,18 @@ const Header = () => {
       />
       <div className="nav-items">
         <ul>
-          <li> 
-            <Link to="/about">
-              About
-            </Link>  
-          </li>
-          <li>
-            <Link to="/card">
-              Cart
-            </Link>  
-          </li>
-          <li> 
-            <Link to="contact">
-              Contact
-            </Link>
-          </li>
+          <Link to="/checkout">
+            <li>
+              <ShoppingCart/>
+              <p>Cart</p>
+            </li>
+          </Link>  
+          <Link to="sign">
+            <li> 
+              <UserRound/>
+              <p>Sign In</p>
+            </li>
+          </Link>
         </ul>
       </div>
     </div>
