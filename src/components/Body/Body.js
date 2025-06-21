@@ -23,7 +23,7 @@ useEffect(() => {
 
 console.log("filteredRestaurants", filteredRestaurants);
 
-return filteredRestaurants.length === 0 ? 
+return filteredRestaurants?.length === 0 ? 
 <SkeletonListing/> : (
   <div className="body-section">
     {/* <SearchBar 

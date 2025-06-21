@@ -23,7 +23,7 @@
 }
 
 .header>a>h1 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .header {
@@ -34,9 +34,9 @@
     margin-right: 20px;
   }
 
-  .nav-items ul a {
+  /* .nav-items ul a {
     color: #fff;
-  }
+  } */
 }
 
 .header-line {
