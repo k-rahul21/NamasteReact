@@ -6,9 +6,15 @@ import QuickFilters from "../QuickFilters/QuickFilters";
 import SkeletonListing from "../SkeletonListing/SkeletonListing";
 import { Link } from "react-router"
 import useRestaurantList from "../../utils/useRestaurantList";
+import useOnlineStatus from "../../utils/useOnlineStatus";
 
 const Body = () => {
-  const {filteredRestaurants, setFilteredRestaurants} = useRestaurantList();
+  const onlineStatus = useOnlineStatus();
+  const { filteredRestaurants, setFilteredRestaurants } = useRestaurantList();
+
+  console.log("onlineStatus", onlineStatus)
+
+  if (onlineStatus === false) return <h1>Seems like you're offline!! Please check your internet connection.</h1>
 
   return filteredRestaurants?.length === 0 || !filteredRestaurants  ? 
     <SkeletonListing/> : (
