@@ -10,8 +10,7 @@ import useRestaurantList from "../../utils/useRestaurantList";
 const Body = () => {
   const {filteredRestaurants, setFilteredRestaurants} = useRestaurantList();
 
-
-  return filteredRestaurants?.length === 0 || filteredRestaurants === null ? 
+  return filteredRestaurants?.length === 0 || !filteredRestaurants  ? 
     <SkeletonListing/> : (
     <div className="body-section">
       {/* <SearchBar 
