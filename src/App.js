@@ -4,6 +4,7 @@ import "../index.css";
 import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import About from "./components/About/About";
+import RestaurantPage from "./components/RestaurantPage/RestaurantPage";
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router";
 
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         {
           path: "/about",
           element: <About/>
+        },
+        {
+          path:"restaurant/:resId",
+          element: <RestaurantPage/>
         }
       ]
     },

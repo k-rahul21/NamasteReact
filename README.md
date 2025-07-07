@@ -131,3 +131,7 @@
 ## why react known as single page application?
 
 - Because it's the one page and when we go on different route on the app then only components got interchange through client side routing.
+
+## useParams hook
+
+- to read the params from the url
