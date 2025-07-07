@@ -23,7 +23,7 @@
 }
 
 .header>a>h1 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .header {
@@ -32,11 +32,18 @@
     width: 200px;
     justify-content: space-between;
     margin-right: 20px;
+    cursor: pointer;
   }
 
-  .nav-items ul a {
+  /* .nav-items ul a {
     color: #fff;
-  }
+  } */
+}
+
+.nav-items > ul > a > li {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .header-line {
