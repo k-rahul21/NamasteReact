@@ -3,9 +3,11 @@ import "./Header.css";
 import Title from "../Title/Title";
 import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router"
-import { UserRound, ShoppingCart } from "lucide-react"
+import { UserRound, ShoppingCart, Wifi, WifiOff  } from "lucide-react"
+import useOnlineStatus from "../../utils/useOnlineStatus";
 
 const Header = () => {
+  const onlineStatus = useOnlineStatus();
   return (
     <div className="header">
       <Title/>
@@ -15,6 +17,11 @@ const Header = () => {
       />
       <div className="nav-items">
         <ul>
+          {/* <Link className="mx-1">
+            <li className="text-white">
+              {onlineStatus ? <Wifi /> : <WifiOff />}
+            </li>
+          </Link> */}
           <Link to="/checkout">
             <li>
               <ShoppingCart/>
